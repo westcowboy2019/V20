@@ -1,0 +1,8 @@
+﻿TYPE
+    User_data_type_2 : STRUCT
+        "D" : Byte;
+        F : DInt;
+        G : DTL;
+        Element_1 : _.User_data_type_1;
+    END_STRUCT;
+END_TYPE

@@ -1,0 +1,24 @@
+﻿TYPE
+    User_data_type_1 : STRUCT
+        "A" : Bool;
+        "B" : Real;
+        "C" : Word;
+        "D" : Time;
+        Str_1 : STRUCT
+            "A" : Bool;
+            "B" : Real;
+            {
+                S7_Access := "ReadOnly := External";
+                S7_Visibility := "Hidden := External"
+            }
+            "C" : DInt;
+            "D" : Array[0..1] of Int;
+        END_STRUCT;
+        "E" : String;
+        Str_2 : STRUCT
+            "a" : Bool;
+            "b" : Real;
+            "c" : DInt;
+        END_STRUCT;
+    END_STRUCT;
+END_TYPE

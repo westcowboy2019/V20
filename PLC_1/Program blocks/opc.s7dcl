@@ -1,0 +1,21 @@
+﻿{
+    S7_Optimized := "TRUE";
+    S7_StandardRetain := "FALSE";
+    S7_Version := "0.1"
+}
+DATA_BLOCK opc
+    VAR
+        { S7_Setpoint := "False" }
+        DUT_1 : _.User_data_type_1;
+        DUT_2 : _.User_data_type_1;
+        { S7_Setpoint := "True" }
+        "a" : Bool;
+        { S7_Setpoint := "True" }
+        "b" : Real;
+        { S7_Setpoint := "True" }
+        "c" : DInt;
+        "d" : Int;
+        "e" : Word;
+        f : S5Time;
+    END_VAR
+END_DATA_BLOCK

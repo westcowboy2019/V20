@@ -1,0 +1,76 @@
+﻿{
+    S7_BlockComment := "MLC_49b";
+    S7_BlockTitle := "MLC_3E9";
+    S7_IECCheck := "TRUE";
+    S7_Optimized := "TRUE";
+    S7_PreferredLanguage := "FBD";
+    S7_Version := "0.1"
+}
+FUNCTION "LBCFC_ROL_DW" : Void
+    VAR_INPUT 
+        { S7_MLC := "MLC_4Zy" }
+        IN : DWord;
+        { S7_MLC := "MLC_3BV" }
+        N : UInt;
+    END_VAR
+    VAR_OUTPUT 
+        { S7_MLC := "MLC_wb" }
+        OUT : DWord;
+    END_VAR
+    VAR_TEMP 
+        { S7_MLC := "MLC_LK" }
+        tempEno : Bool;
+    END_VAR
+
+    {
+        S7_Language := "SCL";
+        S7_NetworkTitle := "MLC_3we"
+    }
+    NETWORK
+        //===============================================================================
+        // SIEMENS AG / (c)Copyright 2021
+        //-------------------------------------------------------------------------------
+        // Title:            Rotate left function for SIMATIC STEP7 CFC V17
+        // Comment/Function: The block rotates the content at the IN input bit-by-bit to the left and
+        //                   outputs the result at the OUT output
+        //                   Internaly the LDT Function is used
+        //                   ENO is generated
+        // Library/Family:   LBCFC / Shift and rotate
+        // Author:           Siemens Digital Industries
+        // Tested with:      S7-PLCSIM Advanced 3.0
+        // Engineering:      TIA Portal V16
+        // Restrictions:     non
+        // Requirements:     PLC S7-1500
+        //-------------------------------------------------------------------------------
+        // Change log table:
+        // Version  | Date       | Expert in charge        | Changes applied
+        //----------|------------|-------------------------|-----------------------------
+        // 01.00.00 | 2021-10-05 | SIMATIC Systems Support | First released version
+        // ==============================================================================
+    END_NETWORK
+    {
+        S7_Language := "FBD";
+        S7_NetworkTitle := "MLC_3hx"
+    }
+    NETWORK
+        RUNG
+            {
+                S7_Templates := "SrcType := DWord"; 
+                S7_GenerateENO := "TRUE"
+            }
+            Rol(
+                in := #IN, 
+                n := #N, 
+                out => #OUT
+            )
+            Coil( #tempEno )
+        END_RUNG
+    END_NETWORK
+    {
+        S7_Language := "SCL";
+        S7_NetworkTitle := "MLC_3nw"
+    }
+    NETWORK
+        ENO := #tempEno;
+    END_NETWORK
+END_FUNCTION

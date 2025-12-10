@@ -1,0 +1,15 @@
+﻿{
+    S7_Optimized := "TRUE";
+    S7_StandardRetain := "FALSE";
+    S7_Version := "0.1"
+}
+DATA_BLOCK "DB"
+    VAR
+        start : Bool;
+        stop : Bool;
+        run : Bool;
+        "Interlock" : Bool;
+        ProDiag_EN : Bool;
+        Pressure : Real;
+    END_VAR
+END_DATA_BLOCK

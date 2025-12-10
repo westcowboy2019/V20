@@ -1,0 +1,13 @@
+﻿{
+    S7_Optimized := "TRUE";
+    S7_StandardRetain := "FALSE";
+    S7_Version := "0.1"
+}
+DATA_BLOCK Trace
+    VAR
+        "bool" : Bool;
+        "int" : Int;
+        "real" : Real;
+        random : UDInt;
+    END_VAR
+END_DATA_BLOCK
