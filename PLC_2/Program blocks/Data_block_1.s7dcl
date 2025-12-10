@@ -1,0 +1,8 @@
+﻿{
+    S7_Optimized := "TRUE";
+    S7_StandardRetain := "FALSE";
+    S7_Version := "0.1"
+}
+DATA_BLOCK Data_block_1 : Array[0..100] of Int
+
+END_DATA_BLOCK
