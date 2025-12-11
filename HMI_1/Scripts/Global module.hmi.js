@@ -6,3 +6,6 @@ Changes to this comment may cause incorrect behavior during document based impor
 export function Function(parameter1, parameter2) {
 //this is a test scripts
 }
+export function Function_1(parameter1, parameter2) {
+HMIRuntime 
+}
