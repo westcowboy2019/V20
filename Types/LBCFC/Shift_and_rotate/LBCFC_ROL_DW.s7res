@@ -1,19 +1,28 @@
 ﻿MultiLingualTexts:
   - id: MLC_3E9
+    de-DE: ROL_DW
     en-US: ROL_DW
   - id: MLC_49b
+    de-DE: ROL Double Word
     en-US: ROL Double Word
   - id: MLC_4Zy
+    de-DE: Wert, der rotiert wird
     en-US: Value to be rotated
   - id: MLC_3BV
+    de-DE: Anzahl der Bitstellen, um die der Wert rotiert wird
     en-US: Number of bit positions by which the value is rotated
   - id: MLC_wb
+    de-DE: Ergebnis der Anweisung
     en-US: Result of the instruction
   - id: MLC_LK
+    de-DE: Temp ENO
     en-US: Temp ENO
   - id: MLC_3we
+    de-DE: Header
     en-US: Header
   - id: MLC_3hx
+    de-DE: ROL
     en-US: ROL
   - id: MLC_3nw
+    de-DE: ENO
     en-US: ENO

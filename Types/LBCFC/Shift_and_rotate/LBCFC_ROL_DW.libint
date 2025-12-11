@@ -1,1 +1,8 @@
-﻿{}
+﻿DocumentHash:
+  - FileName: LBCFC_ROL_DW.s7dcl
+    Hash: AaSJWW//DceUvbqUFM/xfOjgZ5czdZ3x9W4v9kJvR1I=
+  - FileName: LBCFC_ROL_DW.s7res
+    Hash: O/57ofrOFXoX0JZoBaR9fE+j0jI9KuTctRKeJ/r4vrA=
+LibraryMetaFileHash: 1/qbMzJmAYQ6D6Tblb3jqxr1CVcqrCX5jSVwUsEuBZU=
+LibraryVersion:
+  Guid: 8ff6a3b5-fc60-453c-97b2-c3e9f1659b8b
