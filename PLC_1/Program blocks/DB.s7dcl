@@ -11,5 +11,9 @@ DATA_BLOCK "DB"
         "Interlock" : Bool;
         ProDiag_EN : Bool;
         Pressure : Real;
+        Pressure_1 : Real;
+        Pressure_2 : Real;
+        Pressure_3 : Real;
+        Pressure_4 : Real;
     END_VAR
 END_DATA_BLOCK
