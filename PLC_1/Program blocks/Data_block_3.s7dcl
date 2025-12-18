@@ -7,5 +7,6 @@ DATA_BLOCK Data_block_3
     VAR
         "b" : Bool;
         b_1 : Array[0..10] of Byte;
+d:real;
     END_VAR
 END_DATA_BLOCK
